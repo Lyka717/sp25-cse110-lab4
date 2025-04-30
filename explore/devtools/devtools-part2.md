@@ -1,0 +1,3 @@
+Q1: The bug was in the `calculateSum()` function. The parameters `num1` and `num2` are string types which meant that the operator `+` in `num1 + num2` only concatenated the two strings together instead of adding the intended numerical values.
+
+Q2: To fix this, I would wrap the assigned value in both line 5 and line 6 of the  `printSum()` function with `parseInt()`. For instance, `let num1 = parseInt(document.getElementById("num1").value);`. This is so that the variables `num1` and `num2` are actual numerical numbers from the start in case other modifications are made to the code using the same variables. 
