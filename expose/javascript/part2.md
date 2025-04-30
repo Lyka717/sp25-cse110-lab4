@@ -47,3 +47,12 @@ Q14:\
 
 Q15: The operator `==` checks for equality of the content with type coversion, meanwhile `===` strictly checks for equality in both content and type without any conversions.\
 
+Q17: The result will be [2, 4, 6]. First, when we call the function, `newArr` is initiallized to be and empty array. By line 3, we itterate through each index of `array`. Then the `callback()` function calls and executes the function `doSomething()` for the current index and returns the current index value multiplied by 2. Which is then pushed into the array `newArr`.\
+
+Q19: The output would be the following:\
+1\
+4\
+3\
+2\
+This is because line 2 is executed first, line 3 is put on hold for 1 second, line 4 executes almost immediately since it is set for 0 milisecond delay, but line 5 executes seconds, then line 4, and finally line 3.\
+
